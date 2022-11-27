@@ -1,19 +1,18 @@
 <script>
-  import 'reveal.js/dist/reveal.css';
+    import "reveal.js/dist/reveal.css";
 
-    import Reveal            from 'reveal.js';
-    import { onMount, tick } from 'svelte';
-    import Presentation      from './Presentation.svelte';
+    import Reveal from "reveal.js";
+    import reveal from "./lib/reveal.js";
+    import { onMount, setContext } from "svelte";
+    import Presentation from "./Presentation.svelte";
 
     export let app;
-    export let reveal;
+    export let revealConfig;
 
     onMount(async () => {
-        await tick();
-        const deck = new Reveal(reveal);
-        deck.initialize();
-      });
-
+        $reveal = Reveal(revealConfig);
+        $reveal.initialize();
+    });
 </script>
 
 <svelte:head>
@@ -22,7 +21,6 @@
 
 <div class="reveal">
     <div class="slides">
-        <Presentation/>
+        <Presentation />
     </div>
 </div>
-

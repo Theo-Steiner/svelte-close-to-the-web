@@ -1,38 +1,40 @@
 <script>
+	// Color Backgrounds
+	export let bgColor = "#c5d9eb";
 
- // Color Backgrounds
- export let bgColor;
-
- // Gradient Backgrounds
- export let bgGradient;
- // Image Backgrounds
- export let bgImage;
- export let bgSize;
- export let bgPosition;
- export let bgRepeat;
- export let bgOpacity;
- // Video Backgrounds
- export let bgVideo;
- export let bgVideoLoop;
- export let bgVideoMuted;
- // Iframe Backgrounds
- export let bgIframe;
- export let bgInteractive;
- // Transitions
+	// Gradient Backgrounds
+	export let bgGradient = undefined;
+	// Image Backgrounds
+	export let bgImage = undefined;
+	export let bgSize = undefined;
+	export let bgPosition = undefined;
+	export let bgRepeat = undefined;
+	export let bgOpacity = undefined;
+	// Video Backgrounds
+	export let bgVideo = undefined;
+	export let bgVideoLoop = undefined;
+	export let bgVideoMuted = undefined;
+	// Iframe Backgrounds
+	export let bgIframe = undefined;
+	export let bgInteractive = undefined;
+	// Transitions
+	export let transition = undefined;
 </script>
+
 <section
-		data-background-color={bgColor}
-													data-background-gradient={bgGradient}
-		data-background-image={bgImage}
-													data-background-size={bgSize}
-													data-background-position={bgPosition}
-													data-background-repeat={bgRepeat}
-		data-background-opacity={bgOpacity}
-													data-background-video={bgVideo}
-		data-background-video-loop={bgVideoLoop}
-		data-background-video-muted={bgVideoMuted}
-		data-background-iframe={bgIframe}
-		data-background-interactive={bgInteractive}
+	data-background-color={bgColor}
+	data-background-gradient={bgGradient}
+	data-background-image={bgImage}
+	data-background-size={bgSize}
+	data-background-position={bgPosition}
+	data-background-repeat={bgRepeat}
+	data-background-opacity={bgOpacity}
+	data-background-video={bgVideo}
+	data-background-video-loop={bgVideoLoop}
+	data-background-video-muted={bgVideoMuted}
+	data-background-iframe={bgIframe}
+	data-background-interactive={bgInteractive}
+	data-transition={transition}
 >
-		<slot/>
+	<slot />
 </section>

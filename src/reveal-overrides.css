@@ -1,0 +1,45 @@
+:root{
+  --r-heading-color: #42affa;
+  --r-heading-font: Hiragino Sans, sans-serif;
+  --r-heading-text-transform: none;
+  --r-main-font: Hiragino Sans, sans-serif;
+}
+
+
+
+section.has-light-background, 
+section.has-light-background h2,
+section.has-light-background h3 {
+  color: #151515;
+}
+
+section.has-light-background h1 {
+  color: #42affa;
+}
+
+.reveal img,
+.rounded {
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+}
+
+.reveal ol {
+  font-size: 33px;
+  list-style: upper-alpha;
+}
+
+.reveal pre {
+  border-radius: 8px;
+  font-size: 0.5em;
+}
+
+.reveal .slides section .fragment {
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s ease;
+}
+
+.reveal pre code {
+  border-radius: 8px;
+  max-height: none;
+}
