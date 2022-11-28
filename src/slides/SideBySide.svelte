@@ -36,7 +36,9 @@
                 {svelteSnippet}
             </Code>
             <div class="fragment fade-up" data-fragment-index="2">
-                <a href="https://stackblitz.com/edit/svelte-bundle-demo">
+                <a
+                    href="https://stackblitz.com/edit/svelte-bundle-demo?file=src%2FApp.svelte"
+                >
                     <img src="svelte-qr.png" alt="" />
                 </a>
                 <p class="fragment fade-up" data-fragment-index="3">
@@ -53,7 +55,8 @@
                 {vueSnippet}
             </Code>
             <div class="fragment fade-up" data-fragment-index="2">
-                <a href="https://stackblitz.com/edit/vue-bundle-demo"
+                <a
+                    href="https://stackblitz.com/edit/vue-bundle-demo?file=src%2FApp.vue"
                     ><img src="vue-qr.png" alt="" /></a
                 >
                 <p class="fragment fade-up" data-fragment-index="3">
@@ -71,21 +74,17 @@
         vue.jsのクリエイターのevan_youさんもそれに感動し、スベルトのテンプレートを元に、
         vue 3のコンポジションAPIを導入したそうです。
         vue3とスベルトをサイドバイサイドで見ると、その影響がすぐわかると思います。
-        svelteでrefを使わなくても、ただ関数をテンプレートで使うことだけで、
-        その関数はリアクティブな関数になります。
-        そのほか、一番違うのは、スベルトの独特なシンタックスですかね。
-        例えば、このドルのリアクティブステートメントはvueのcomputedやwatchに近いものです。
-        あとはとこのhandlebar.jsに近いeach block。Vueだとv-forですね。
-        しかし、vueとスベルトがそこまでにていたら、どうして僕はそれでも、
-        svelteの方がウェブに近いと言い続けますか。
-        では、この二つアプリをビルドしてみましょう。 --stackblitz--
-        まずは、vueです。これは、vite.jsで先のアプリを作ったものです。
-        ご覧の通り、予想通りに動いています。
-        ここでvueをインプットすると、テキストのいろが変わります。
-        では、ビルドします。javascriptバンドルを見ると、54キロバイトですね。
-        gzipするとさらに22キロバイトに下がります。
-        悪くないですね。では、スベルトの方のアプリはどうでしょう。
-        これもご覧の通り、予想通り動いています。
+        <br />--NEXT--<br />
+        vueと違ってsvelteではわざわざrefというヘルパーをを使わなくても、ただ関数をテンプレートで使うことだけで、
+        その関数はリアクティブな関数になります。<br />
+        一番目立つのは、スベルトの独特なシンタックスですかね。 例えば、このドルのリアクティブステートメントはvueのcomputedやwatchに近いものです。
+        <br />
+        あとはとこのhandlebar.jsに近いeach block。Vueだとv-forですね。 しかし、vueとスベルトがそこまでにていたら、どうして僕はそれでも、
+        svelteの方がウェブに近いと言い続けますか。 では、この二つアプリをビルドしてみましょう。
+        <br />--stackblitz--<br /> まずは、vueです。これは、vite.jsで先のアプリを作ったものです。
+        ご覧の通り、予想通りに動いています。 ここでvueをインプットすると、テキストのいろが変わります。
+        では、ビルドします。javascriptバンドルを見ると、54キロバイトですね。 gzipするとさらに22キロバイトに下がります。
+        悪くないですね。では、スベルトの方のアプリはどうでしょう。 これもご覧の通り、予想通り動いています。
         しかし、これをビルドすると、javascriptバンドルがvueのバンドルより全然小さいということがわかります。
     </Notes>
 </Slide>

@@ -3,11 +3,5 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  optimizeDeps: {
-    include: ['codemirror'],
-    exclude: [
-      '@sveltejs/repl',
-    ],
-  },
   plugins: [svelte()]
 })
